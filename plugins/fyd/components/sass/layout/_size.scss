@@ -1,0 +1,13 @@
+.size {
+
+    &-1-of-1 {
+        @include span(12 of $gridpage);
+    }
+
+    &-1-of-3 {
+        @include breakpoint($screen $desktopstart) {
+          @include gallery(4 of $gridpage);        
+
+        }
+    }
+}

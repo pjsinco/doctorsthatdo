@@ -1,0 +1,29 @@
+.wrap {
+
+    &--inner {
+        position: relative;
+        width: 100%;
+
+        .js-ready & {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+            transition: transform 500ms ease;
+            backface-visibility: hidden;
+        }
+
+        .js-nav & {
+            /*left: 70%;*/
+            transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+        }
+    }
+    
+    &--outer {
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        /*max-width: $sitewidth;*/
+        width: 100%;
+    }
+
+}

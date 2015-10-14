@@ -1,0 +1,15 @@
+$gridpage: (
+  global-box-sizing: border-box,
+  columns: 12,
+  /*container: 60em,*/
+  container: $sitewidth,
+  gutters: .25,
+  debug: (
+    /*image: show-columns,*/
+    image: hide,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+);
+

@@ -1,0 +1,79 @@
+/*
+ * COLORS
+ */
+$verydark: #333;
+$white: #fff;
+
+// Campaign colors
+$gray: #8f8f8f;
+$orange: #ffaa00;
+$cyan: #01eaff;
+$pink: #d45dcc;
+
+$mediumgray: #b3b3b3;
+$lightgray: #ddd;
+$extralightgray: #f5f5f5;
+
+$primarycolor: $orange;
+$secondarycolor: $cyan;
+$accentcolor: $pink;
+$linkcolor: $orange;
+
+/*
+ * TYPOGRAPHY
+ */
+/*$primaryfont: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+$primaryfont: 'gothambook', sans-serif;
+$secondaryfont: Georgia, serif;
+
+$fontcolor: $verydark;
+$fontcolorlighter: $gray;
+$font-color-lightest: $mediumgray;
+
+$font-size-base: 1.125em;
+$fontlight: 200;
+$fontnormal: 400;
+$fontbold: 600;
+$bodylineheight: 1.4;
+$bodylineheight-bigger: 1.65;
+
+/*
+ * Layout
+ */
+/*$sitewidth: 53.75em;*/
+/*$sitewidth: 860px;*/
+$outside-gutter-small: .5em;
+$outside-gutter-medium: 1.25em;
+$outside-gutter-large: 2em;
+
+/*
+ * Misc
+ */
+$border-radius: 4px;
+
+/**
+ * For hover.css
+ */
+
+// Durations
+$fastduration: .1s;
+$mediumduration: .2s;
+$slowduration: .5s;
+
+/**
+ * BREAKPOINTS
+ * 
+ */
+$all          : 'all';
+$screen       : 'screen';
+$smallstart   : 320px;
+$mediumstart  : 480px;
+$largestart   : 768px;
+$desktopstart : 992px;
+
+/**
+ * Bootstrap equivalents
+ * 
+ */
+$screen-sm-min: $largestart;
+$screen-md-min: $desktopstart;

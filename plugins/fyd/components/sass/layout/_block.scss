@@ -1,0 +1,10 @@
+.block {
+    @include pad(.67 of $gridpage);
+    position: relative;
+    margin: 0 auto;
+    max-width: $sitewidth;
+
+    &--padding {
+        padding: 1.5em 1.25em;
+    }
+}

@@ -1,0 +1,82 @@
+.hero {
+
+    // TODO TEMP
+    /*max-height: 700px;*/
+    height: 100%;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #6B6551;
+
+    &__body {
+        margin-top: 1.5em;
+        margin-bottom: 1.25em;
+        font-family: $primaryfont;
+        font-size: 1.3em;
+        line-height: 1.7;
+        color: $white;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 1.785714286em;
+        }
+    
+    }
+
+    &__image {
+        text-align: center;
+
+        &--placeholder {
+            background-color: $mediumgray;
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    &__overlay {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /*top: 0;*/
+        width: 100%;
+        background-color: rgba($orange, .7);
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: absolute;
+        }
+
+    }
+
+    &__content {
+        /*text-align: center;*/
+        margin-left: auto;
+        margin-right: auto;
+        /*width: $sitewidth;*/
+    }
+
+    &__title {
+        /*display: inline;*/
+        margin-bottom: 1em;
+        margin-right: .5em;
+        font-family: $primaryfont;
+        /*text-align: center;*/
+        font-weight: $fontbold;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        line-height: 1.5;
+        color: $white;
+
+        @media screen and (min-width: $screen-sm-min) {
+            text-align: right;
+        }
+    }
+}

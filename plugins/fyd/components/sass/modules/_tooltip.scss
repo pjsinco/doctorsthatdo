@@ -1,0 +1,62 @@
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+.fyd-tooltip {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    background: transparent;
+    transition: all .5s linear;
+}
+
+/* Hide the tooltip content by default */
+.fyd-tooltip:before,
+.fyd-tooltip:after {
+    /*visibility: hidden;*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /*filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);*/
+    /*opacity: 0;*/
+    pointer-events: none;
+    background: transparent;
+    transition: all .5s linear;
+}
+
+/* Position tooltip above the element */
+.fyd-tooltip:before{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    height: 30px;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px;
+    z-index: 3;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 0;
+    background: rgba($pink,.75);
+    color: #fff;
+    content: attr(data-tooltip);
+    /*opacity: 1;*/
+    transition: all .5s linear;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+//.fyd-tooltip:after {
+//    position: absolute;
+//    bottom: 150%;
+//    left: 50%;
+//    margin-left: -5px;
+//    width: 0;
+//    border-top: 5px solid #000;
+//    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+//    border-right: 5px solid transparent;
+//    border-left: 5px solid transparent;
+//    content: " ";
+//    font-size: 0;
+//    line-height: 0;
+//}
